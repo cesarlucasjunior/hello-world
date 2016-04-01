@@ -1,0 +1,88 @@
+git clear - limpar tela
+git init - criação de repositório
+git status
+branch master - pasta mestre
+track - rastrear
+git add nome_folder
+git add *.html
+hit add .
+
+git commit -m "message"
+.gitignore
+commitar sem add
+
+git diff - local
+
+git diff --stage - stage area
+
+git log - todos os commits dados
+
+git log -p ------ fazer o que foi feito nos commits
+
+git log -p -1, -2, -n
+
+gitk - alterações versionadas com GUI.
+
+git log --pretty=oneline
+
+git commit --amend -m "qualify_status2" (edicao) --- editar commit
+
+git reset HEAD <file>
+
+git checkout -- <file>
+
+git rm <file>
+
+tags no git durante o código
+
+Criando tags: git tag -a v1.o -m "Versao 1.0"
+
+Criando tag num commit dado: git tag -a v0.0 chavecompletadocommit -m "Versao0.0"
+
+mais detalhes de uma tag: git show v0.0
+
+usando tag:
+
+	visualizar arquivos na v0: git checkout v0.0/v1.0
+
+	git checkou master 
+
+deletar tag: git tag -d v0.0
+
+---> branches git: ramificações
+
+	Segmentações dos sistemas, indepentes uma das outras.
+	Segmentação padrão = branch master.
+
+	Ambiente de testes:
+
+		criando: git branch teste
+
+		acessando: git checkout teste
+
+		criando e acessando: git checkout -b teste
+
+	Implementar em produção no que estava em testes: merge
+		
+		Em produção faço:
+		git merge teste
+		
+		git branch -d teste ---> deletar
+		git branch ---> listar branches
+
+		Merge já comitado em origem - conflito no conteúdo - deve-se escolher um dos dois!
+
+			
+		
+-----> Acessando máquina ao GitHub:
+
+	1º Gerar na nossa máquina um par de chave SSH: ssh-keygen
+	2º Clonar repositório do GitHub na máquina: git clone <endereco-ssh> <nome_local>
+	3º Adicionar e Commitar o novo arquivo da pasta
+	4º Enviar o arquivo para o GitHub: git push origin master
+	5º Trazendo arquivos do servidor GitHub.
+
+
+
+
+
